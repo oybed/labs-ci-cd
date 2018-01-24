@@ -1,5 +1,4 @@
 casl-ansible
-roles/*
 !roles/make-demo-unique
 *.pyc
 .idea
