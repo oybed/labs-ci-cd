@@ -9,6 +9,6 @@
     password: "{{ nexus_password }}"
     force_basic_auth: yes
   register: nexus_server_check_result
-  until: nexus_server_check_result | success
+  until: nexus_server_check_result is success
   retries: '{{ nexus_server_poll_retries }}'
   delay: '{{ nexus_server_poll_delay_in_seconds }}'
